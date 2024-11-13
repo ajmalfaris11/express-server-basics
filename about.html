@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about-header h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .about-header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-team {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-team h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .team-member h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-header">
+                <h2>Welcome to Our Company</h2>
+                <p>We are passionate about providing the best services to our clients. Here's a little bit more about who we are and what we do.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>We aim to provide high-quality products and services that meet the needs of our customers. With a strong focus on innovation and customer satisfaction, we are committed to delivering excellence in everything we do.</p>
+                    <p>We believe in the power of teamwork, creativity, and integrity, which are the cornerstones of our company’s success.</p>
+                </div>
+
+                <div class="about-team">
+                    <h3>Meet Our Team</h3>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/80" alt="Team Member">
+                        <div>
+                            <h4>John Doe</h4>
+                            <p>CEO & Founder</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/80" alt="Team Member">
+                        <div>
+                            <h4>Jane Smith</h4>
+                            <p>Chief Marketing Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/80" alt="Team Member">
+                        <div>
+                            <h4>Michael Lee</h4>
+                            <p>Head of Product Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

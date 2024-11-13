@@ -12,11 +12,12 @@ const admin = require('./routes/admin');
 
 const contact = require('./routes/contact')
 
+const about = require('./routes/about')
+
 // Define a route for the root URL ('/') that sends a "hello world" response
 app.get('/', (req, res) => {
     res.send('hello world');
 });
-
 
 
 // Define a route for '/Products' that sends a welcome message for the Products page
@@ -41,6 +42,7 @@ app.use('/admin', admin);
 
 app.use('/contact', contact);
 
+app.use('/about',about)
 
 
 
