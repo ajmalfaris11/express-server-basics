@@ -1,0 +1,20 @@
+{
+  "name": "express-server-basics",
+  "version": "1.0.0",
+  "description": "A beginner's guide to building a server using Node.js and the Express framework. This repository covers the fundamental steps for setting up an Express server, handling routes, and managing middleware.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajmalfaris11/express-server-basics.git"
+  },
+  "author": "Ajmal Faris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajmalfaris11/express-server-basics/issues"
+  },
+  "homepage": "https://github.com/ajmalfaris11/express-server-basics#readme"
+}
