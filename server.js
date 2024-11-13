@@ -7,6 +7,8 @@ const app = new express();
 // Import the API routes from the 'api' module located in the 'routes' folder
 const api = require('./routes/api');
 
+// Import the admin routes from the 'admin' module located in the 'routes' folder
+const admin = require('./routes/admin');
 
 
 // Define a route for the root URL ('/') that sends a "hello world" response
@@ -32,6 +34,9 @@ app.get('/Products/:id', (req, res) => {
 
 // Use the imported API routes under the '/api' path prefix
 app.use('/api', api);
+
+// Use the imported API routes under the '/api' path prefix
+app.use('/admin', admin);
 
 
 // Start the server and listen on port 3256
