@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ajmalfaris11/express-server-basics#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   }
 }
