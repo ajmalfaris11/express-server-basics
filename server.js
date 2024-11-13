@@ -10,6 +10,7 @@ const api = require('./routes/api');
 // Import the admin routes from the 'admin' module located in the 'routes' folder
 const admin = require('./routes/admin');
 
+const contact = require('./routes/contact')
 
 // Define a route for the root URL ('/') that sends a "hello world" response
 app.get('/', (req, res) => {
@@ -37,6 +38,10 @@ app.use('/api', api);
 
 // Use the imported API routes under the '/api' path prefix
 app.use('/admin', admin);
+
+app.use('/contact', contact);
+
+
 
 
 // Start the server and listen on port 3256
