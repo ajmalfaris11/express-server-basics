@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ajmalfaris11/express-server-basics/issues"
   },
-  "homepage": "https://github.com/ajmalfaris11/express-server-basics#readme"
+  "homepage": "https://github.com/ajmalfaris11/express-server-basics#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
