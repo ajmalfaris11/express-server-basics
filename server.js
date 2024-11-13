@@ -4,6 +4,10 @@ const express = require('express');
 // Initialize an express application
 const app = new express();
 
+// Import the API routes from the 'api' module located in the 'routes' folder
+const api = require('./routes/api');
+
+
 
 // Define a route for the root URL ('/') that sends a "hello world" response
 app.get('/', (req, res) => {
@@ -24,6 +28,10 @@ app.get('/Products/:id', (req, res) => {
     res.send(`Hello, Welcome to the Product Page`);
 });
 
+
+
+// Use the imported API routes under the '/api' path prefix
+app.use('/api', api);
 
 
 // Start the server and listen on port 3256
