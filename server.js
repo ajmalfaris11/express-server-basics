@@ -12,6 +12,20 @@ app.get('/', (req, res) => {
 
 
 
+// Define a route for '/Products' that sends a welcome message for the Products page
+app.get('/Products', (req, res) => {
+    res.send('Hello, Welcome to the Products Page');
+});
+
+// Define a route for '/Products/:id' to handle requests for a specific product by its ID
+app.get('/Products/:id', (req, res) => {
+    let value = req.params; // Get route parameters (e.g., product ID)
+    console.log(value); // Log the parameters to the console for debugging
+    res.send(`Hello, Welcome to the Product Page`);
+});
+
+
+
 // Start the server and listen on port 3256
 app.listen(3256, () => {
     console.log('Server is running at port 3256');
